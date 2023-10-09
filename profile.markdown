@@ -4,7 +4,7 @@ title: Leisl Schrader's Artist Profile
 permalink: /profile/
 ---
 
-		<section id="section_Profile">
+<section id="section_Profile">
 			<h2>
 				<span>{Leisl's Artist Profile}</span>
 			</h2>

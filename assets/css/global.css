@@ -32,7 +32,7 @@ body {
 	font-family: "usual", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	margin: 6% 10%;
+	margin: 0 10% 6% 10%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,6 +110,10 @@ table tr td {
 	padding: 10px 20px;
 }
 
+#header_Global {
+	margin-bottom: 6%;
+}
+
 #header_Global div {
 	background-color: var(--color-hex-complementary);
 	display: flex;
@@ -150,6 +154,7 @@ table tr td {
 #header_Home {
 	display: flex;
 	align-items: stretch;
+	margin-top: 6%;
 }
 
 #header_Home_Title, #header_Home_Subtitle {
