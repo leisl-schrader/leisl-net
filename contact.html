@@ -1,0 +1,45 @@
+---
+layout: page
+title: Leisl Schrader's Contact Information
+permalink: /contact/
+---
+
+<section id="section_Contact">
+			<h2>
+				<span>{Leisl's Contact Information}</span>
+			</h2>
+
+			<p>The best method to reach me by cold contact is via e-mail. Please fill out the form below to send one.</p>
+			<form action="https://formsubmit.co/a9511f51b8e04c043468774af36b94af" method="POST">
+				<div>
+					<label for="name">Your First Name / Given Name</label>
+					<input type="text" name="firstname">
+				</div>
+				<div>
+					<label for="name">Your Last Name / Surname / Family Name</label>
+					<input type="text" name="lastname">
+				</div>
+				<div>
+					<label for="email">Your E-mail Address</label>
+					<input type="email" name="email" required>
+				</div>
+				<div>
+					<label for="message">Your Message</label>
+					<textarea name="message"></textarea>
+				</div>
+				<div>
+					<input type="checkbox" name="subscribe" value="yes" checked>
+					<label for="subscribe">Subscribe to Leisl's newsletter</label>
+				</div>
+				<!-- add hidden Honeypot input to prevent spams -->
+				<input type="hidden" name="_gotcha" style="display:none !important">
+
+				<input type="hidden" name="_subject" value="Form Submission on Leisl.net">
+				<input type="hidden" name="_template" value="box">
+
+				<input type="hidden" name="_autoresponse" value="Confirmation of your form submission on Leisl.net">
+				<input type="hidden" name="_next" value="{{ site.baseurl }}/contact/thanks/">
+
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
