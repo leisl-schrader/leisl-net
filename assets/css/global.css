@@ -32,7 +32,7 @@ body {
 	font-family: "usual", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	margin: 0 10% 6% 10%;
+	margin: 6% 10%;
 }
 
 button {
@@ -145,42 +145,61 @@ table tr td {
 }
 
 #header_Global {
-	margin-bottom: 6%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 
-#header_Global div {
+#header_Global_Title_Container {
 	background-color: var(--color-hex-complementary);
+}
+
+#header_Global_Nav_Container {
+	background-color: var(--color-hex-primary-bg);
+}
+
+#header_Global_Title {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
   	justify-content: space-between;
-	width: 100%;
+	margin: auto 10%;
+	padding: 1em;
 }
 
-#header_Global img {
+#header_Global_Title figure {
+	margin: 0;
+}
+
+#header_Global_Title img {
 	width: 350px;
 }
 
-#header_Global h1 {
+#header_Global_Title h1 {
 	color: var(--color-hex-primary);
 	font-size: 24px;
 	letter-spacing: 3px;
+	margin: 0;
+	text-align: center;
 }
 
-#header_Global .material-symbols-rounded {
+#header_Global_Title .material-symbols-rounded {
 	background-color: var(--color-hex-primary-bg);
 	display: inline-block;
 	padding: 10px;
 }
 
 #header_Global nav {
-	width: 100%;
+	margin: auto 10%;
 }
 
 #header_Global nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin: 0;
+	padding: 1em;
 }
 
 /* Home page only */ 
@@ -188,7 +207,6 @@ table tr td {
 #header_Home {
 	display: flex;
 	align-items: stretch;
-	margin-top: 6%;
 }
 
 #header_Home_Title, #header_Home_Subtitle {
