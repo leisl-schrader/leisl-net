@@ -43,4 +43,20 @@ $(document).ready(function () {
 
     });
 
+    // functionality: inner page header nav is toggled by menu button
+
+    let menuButton = "header_Global_MenuButton";
+
+    let menuContainer = "header_Global_Nav_Container";
+
+    // first, hide nav so that without JS, nav is always visible
+
+    $(`#${menuContainer}`).hide();
+
+    $(`#${menuButton}`).click(function () {
+
+        $(`#${menuContainer}`).slideToggle();
+
+    });
+
   });

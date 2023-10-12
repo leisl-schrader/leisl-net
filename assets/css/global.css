@@ -184,10 +184,15 @@ table tr td {
 	text-align: center;
 }
 
-#header_Global_Title .material-symbols-rounded {
+#header_Global_MenuButton {
 	background-color: var(--color-hex-primary-bg);
+	cursor: pointer;
 	display: inline-block;
 	padding: 10px;
+	transition: all 0.3s;
+}
+#header_Global_MenuButton:hover {
+	background-color: var(--color-hex-primary);
 }
 
 #header_Global nav {
@@ -200,6 +205,64 @@ table tr td {
 	justify-content: space-between;
 	margin: 0;
 	padding: 1em;
+}
+
+@media only screen and (max-width: 1100px) {
+
+	#header_Global nav ul li {
+		letter-spacing: 1px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	#header_Global_Title h1 {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+
+	#header_Global_Title img {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	#header_Global nav ul li {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	#header_Global_Title {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#header_Global nav ul {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#header_Global nav ul li {
+		font-size: 18px;
+		letter-spacing: 5px;
+		margin: 15px 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	#header_Global_Title img {
+		width: 270px;
+	}
+
+	#header_Global_Title h1 {
+		font-size: 17px;
+	}
 }
 
 /* Home page only */ 
@@ -373,4 +436,17 @@ table tr td {
 
 .list_CTA a {
 	
+}
+
+/* inner pages only */
+#section_Profile, #section_Design, #section_Artwork, #section_Resume, #section_Shop, #section_Contact, #section_Links {
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 950px) {
+
+	#section_Profile, #section_Design, #section_Artwork, #section_Resume, #section_Shop, #section_Contact, #section_Links {
+		padding-top: 80px;
+	}
+
 }
