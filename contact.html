@@ -12,23 +12,23 @@ permalink: /contact/
 			<p>The best method to reach me by cold contact is via e-mail. Please fill out the form below to send one.</p>
 			<form action="https://formsubmit.co/a9511f51b8e04c043468774af36b94af" method="POST">
 				<div>
-					<label for="name">Your First Name / Given Name</label>
-					<input type="text" name="firstname">
+					<label for="firstname">Your First Name / Given Name</label>
+					<input type="text" name="firstname" id="firstname" autocomplete="given-name">
 				</div>
 				<div>
-					<label for="name">Your Last Name / Surname / Family Name</label>
-					<input type="text" name="lastname">
+					<label for="lastname">Your Last Name / Surname / Family Name</label>
+					<input type="text" name="lastname" id="lastname" autocomplete="family-name">
 				</div>
 				<div>
 					<label for="email">Your E-mail Address</label>
-					<input type="email" name="email" required>
+					<input type="email" name="email" id="email" autocomplete="email" required>
 				</div>
 				<div>
 					<label for="message">Your Message</label>
-					<textarea name="message"></textarea>
+					<textarea name="message" id="message"></textarea>
 				</div>
 				<div>
-					<input type="checkbox" name="subscribe" value="yes" checked>
+					<input type="checkbox" name="subscribe" id="subscribe" value="yes" checked>
 					<label for="subscribe">Subscribe to Leisl's newsletter</label>
 				</div>
 				<!-- add hidden Honeypot input to prevent spams -->

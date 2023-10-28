@@ -54,6 +54,11 @@ footer {
 	margin-top: 6%;
 }
 
+form {
+	border-top: 1px solid #FFFFFF;
+	padding-top: 1em;
+}
+
 form input:not([type='checkbox']), form textarea {
 	display: block;
 	margin-top: 5px;
@@ -149,6 +154,7 @@ table tr td {
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 100;
 }
 
 #header_Global_Title_Container {
@@ -436,6 +442,37 @@ table tr td {
 
 .list_CTA a {
 	
+}
+
+.list_Gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.list_Gallery li {
+	margin: 25px;
+	position: relative;
+}
+
+.list_Gallery img {
+	border-radius: 30px 30px 0 30px;
+	height: 200px;
+	width: 100%;
+}
+
+.list_Gallery a {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px 0 0 0;
+	display: inline-block;
+	font-weight: 500;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px 10px 10px;
 }
 
 /* inner pages only */
